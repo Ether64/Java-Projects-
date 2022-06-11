@@ -1,0 +1,6 @@
+5
+10,Debit,Suntrust,Couch,AC85260,5487,March 28 2021,100.0
+11,Credit,USF Visa,Couch,BD34235,A0100,February 5 2021,10.0
+12,Credit,Mastercard,Couch,BD34235,3467,February 3 2021,7.0
+13,Debit,Suntrust,Couch,AC85260,14629,February 2 2021,15.37
+14,Debit,Bank of America,Couch,AC85260,I8527,January 29 2021,56.49

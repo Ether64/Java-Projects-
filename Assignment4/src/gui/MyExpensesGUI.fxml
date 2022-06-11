@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MyExpensesGUI">
+   <children>
+      <SplitPane fx:id="split" dividerPositions="0.4899665551839465" prefHeight="401.0" prefWidth="607.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane fx:id="buttonsTextFields" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TextField fx:id="eNumber" layoutX="8.0" layoutY="100.0" prefHeight="25.0" prefWidth="100.0" promptText="ExpenseRefNumber" AnchorPane.leftAnchor="8.0" />
+                  <TextField fx:id="textFile" layoutX="8.0" layoutY="38.0" prefHeight="25.0" prefWidth="100.0" promptText="FileName.txt" AnchorPane.leftAnchor="8.0" />
+                  <Button fx:id="readButton" layoutX="118.0" layoutY="38.0" mnemonicParsing="false" onAction="#readFile" prefHeight="21.0" prefWidth="111.0" text="Read File" AnchorPane.rightAnchor="12.0" />
+                  <Button fx:id="printExpPayButton" layoutX="118.0" layoutY="100.0" mnemonicParsing="false" onAction="#printExpPay" prefHeight="21.0" prefWidth="111.0" text="Print Expense &amp; Payment" AnchorPane.rightAnchor="12.0" />
+                  <Button fx:id="printAllButton" layoutX="15.0" layoutY="149.0" mnemonicParsing="false" onAction="#printAll" prefHeight="40.0" prefWidth="211.0" text="Print All Expenses &amp; Payments" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+                  <Button fx:id="printTotalExpButton" layoutX="15.0" layoutY="202.0" mnemonicParsing="false" onAction="#printTotalExp" prefHeight="34.0" prefWidth="260.0" text="Print Total Expenses" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+                  <Button fx:id="printTotalBalanceButton" layoutX="17.0" layoutY="250.0" mnemonicParsing="false" onAction="#printTotalBalance" prefHeight="34.0" prefWidth="256.0" text="Print Total Balance" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="17.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane fx:id="printOutput" minHeight="0.0" minWidth="0.0" prefHeight="136.0" prefWidth="75.0">
+               <children>
+                  <AnchorPane fx:id="textWithScroll" layoutX="23.0" layoutY="32.0" prefHeight="241.0" prefWidth="205.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="32.0">
+                     <children>
+                        <TextArea fx:id="programOutput" layoutY="-14.0" prefHeight="241.0" prefWidth="205.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <ScrollBar fx:id="scrollText" layoutX="246.0" orientation="VERTICAL" prefHeight="349.0" prefWidth="14.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
